@@ -1,0 +1,42 @@
+/*
+   Notes:
+
+   .article represents an element that contains a heading and a direct child div
+   holding all the article content.
+
+   .jQAEMore represents the 'read more' button used to expand/collapse.
+
+*/
+
+/* required: removes the animation stutter caused by margins ceasing to collapse
+   when the anim starts/ends. If you have backgrounds or borders on paragraphs
+   then this fix is likely to cause issues. */
+.article p { margin: 0; padding-bottom: 1em; }
+
+/* optional styles for the 'read more' button. */
+.jQAEMore {
+	color: #403333;
+	margin: 0 0 0 .2em;
+	padding: 0 .2em;
+	border: 1px solid #ccbbbb;
+	background: #ddcccc;
+	font-size: .65em;
+	font-family: sans-serif;
+	text-shadow: 0px 0px 1px white;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+	/* fixes IE6&7 horizontal gap inside button when display:inline */
+	overflow: visible;
+}
+.jQAEMore:hover {
+	color: black;
+	border: 1px solid #aa9999;
+	-moz-box-shadow: 0 0 4px #ccbbbb;
+	-webkit-box-shadow: 0 0 4px #ccbbbb;
+	-o-box-shadow: 0 0 4px #ccbbbb;
+	-ms-box-shadow: 0 0 4px #ccbbbb;
+	box-shadow: 0 0 4px #ccbbbb;
+}

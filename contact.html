@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Chimfunshi </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+<!-- This script is for the google map -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+  
+<!-- This one is for the hide-unhide option. Speak with Brian how you can hide the map with this. -->
+<script>
+	$(document).ready(function(){
+		$("#hidedPart").hide();
+		$("#thePlaceWhereYouClickForTheHidedPartToShowUp").click(function(){
+			$("#hidedPart").slideToggle("fast");
+		});
+	});
+</script>
+<!-- This is the style for the map. You can put this in css i think, but this is how i found it on the internet. So here you can change the options for the map, like width and height.-->
+<style>
+      #map_canvas {
+        width: 300px;
+        height: 200px;
+		margin:20px;
+	
+      }
+ </style>
+    
+<!-- This are the geolocation options for the map. I set it already for our location. You can change how much zoomed is the map if you want -->
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(-12.359202,27.52985),
+          zoom: 12,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+</head>
+
+	<body>
+   
+		<center>
+       
+			<div id="headerBg">
+				<div id="header">
+					<div id="logo">
+						<img src="images/logo_alpha6.png" width="220" height="65" alt="logo of chimfunshi"  /> 
+					</div>
+ 						<div id="navigation">
+                            <nav class="cl-effect-4">
+                                <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="gallery.html">GALLERY</a></li>
+                                <li><a href="support.html">SUPPORT</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                                </ul>
+                            </nav>
+						</div>
+				</div>
+			</div>
+            
+<!-- This is an id for the box to move to the right. You can see the float:rigth in the CSS.-->           
+<div id="textRight">
+
+<!-- Here i make an id for the contact text. The settings are in CSS.-->
+<div id="contact">
+<br />
+  <h3>&nbsp;</h3>
+  <h3> Contact</h3>
+<p>Chimfunshi Wildlife Orphanage</p>
+<p>P.O. Box 11190</p>
+<p>Chingola,ZAMBIA</p>
+<p>Tel / Fax: 260-2-311293</p>
+<p>chimfunshiwildlife@iwayafrica.com</p>
+</p>
+<p>&nbsp;</p>
+<h3>Opening time</h3>
+<p>Monday-Friday: 10-18</p>
+<p>Saturday, Sunday: 9-19</p>
+<p>&nbsp;</p>
+<h3>Prices</h3>
+<p>Adults: 70 ZMK<p>
+<p>Children and students: 35 ZMK</p>
+<p>&nbsp;</p>
+<br />
+<br />
+<h3>Map</h3>
+        <li id="map_canvas"></li>
+      
+</div>
+</div>
+
+<div class="backstretch">
+    <ul>
+        <script>$.backstretch([
+      "images/contact.jpg"
+    
+  ], {duration: 3000, fade: 750});
+  </script>
+    </ul>
+</div>
+
+
+
+
+<div id="footer">
+<div id="copyright">
+<p>&copy; Copyright 2013, Chimfunshi Wildlife Orphanege, Zambia</p>
+</div>
+</div>
+
+</body>
+</center>
+</html>

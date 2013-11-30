@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Ok so, thank you for your job. I think the website it's ok, it need just a little work. Please ask Brian how to change the contact page, because it drive me crazy. So...let's begin :D -->
+<!-- This are scripts for jquery. First one is the jquery script uploaded on the google website. The second one is for that line under the menu items. And the third one is for the background slideshow. -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/jquery.backstretch.min.js"></script>
+</head>
+
+<body>
+	<center>
+    <!-- This one are some id's that i created for he thing where the menus are showing (the blue stripe) and for the logo. You can check them out in the CSS. -->
+    	<div id="headerBg">
+			<div id="header">
+				<div id="logo">
+					<img src="images/logo_alpha6.png" width="220" height="65" alt="logo of chimfunshi"  /> 
+                    
+				</div>
+                
+                
+            <!-- This is where the navigation button starts. It have an ID, that have some rules in the CSS and it have a class for the line-under effect. -->
+ 			<div id="navigation">
+        		<nav class="cl-effect-4">
+                                <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="gallery.html">GALLERY</a></li>
+                                <li><a href="support.html">SUPPORT</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                                </ul>
+                </nav>
+			</div>
+			</div>
+		</div>
+		<!-- Here is the script for the slideshow images. -->
+		<div class="backstretch">
+    		<ul>
+        		<script>$.backstretch([
+      "images/Home_background1.png"
+    , "images/home2.png"
+    , "images/home3.png"
+  ], {duration: 3000, fade: 750});
+ 	 			</script>
+   		 	</ul>
+		</div>
+
+		<!-- Here is where the footer begins and it have some rules in the CSS. The footer id is for the blue line and the copyright id is for the text. -->
+		<div id="footer">
+			<div id="copyright">
+				<p>&copy; Copyright 2013, Chimfunshi Wildlife Orphanege, Zambia</p>
+			</div>
+		</div>
+</center>
+</body>
+</html>
